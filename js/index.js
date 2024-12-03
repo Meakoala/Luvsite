@@ -1,10 +1,19 @@
 const title = document.querySelector('.title')
-const text = 'Have Something for U'.split('')
+const text = 'I Have Something for U'.split('')
 for (let index = 0; index < text.length; index++) {
   if (text[index] !== ' ') {
     title.innerHTML += `<span>${text[index]}<span/>`
   } else {
     title.innerHTML += `<span style='margin-right: 20px;'><span/>`
+  }
+}
+const div = document.querySelector('.txt')
+const par = "ขอโทษที่ทำให้รอนานมากนะคะ รักเธอที่สุด Mine's Sky♡♡♡".split('')
+for (let i = 0; i < par.length; i++) {
+  if (par[i] !== ' ') {
+    div.innerHTML += `<span>${par[i]}<span/>`
+  } else {
+    div.innerHTML += `<span style='margin-right: 20px;'><span/>`
   }
 }
 

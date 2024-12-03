@@ -1,9 +1,8 @@
-
 onload = () => {
   const c = setTimeout(() => {
     document.body.classList.remove("not-loaded");
 
-    const titles = ('Happy Girlfriends Day 💓').split('')
+    const titles = ('Happy 2nd Month Anniversary 💜').split('')
     const titleElement = document.getElementById('title');
     let index = 0;
 
@@ -11,12 +10,12 @@ onload = () => {
       if (index < titles.length) {
         titleElement.innerHTML += titles[index];
         index++;
-        setTimeout(appendTitle, 300); // 1000ms delay
+        setTimeout(appendTitle, 250); // 1000ms delay
       }
     }
 
     appendTitle();
 
     clearTimeout(c);
-  }, 1000);
+  }, 1500);
 };
