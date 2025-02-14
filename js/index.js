@@ -7,15 +7,6 @@ for (let index = 0; index < text.length; index++) {
     title.innerHTML += `<span style='margin-right: 20px;'><span/>`
   }
 }
-const div = document.querySelector('.txt')
-const par = "ขอโทษที่ทำให้รอนานมากนะคะ รักเธอที่สุด Mine's Sky♡♡♡".split('')
-for (let i = 0; i < par.length; i++) {
-  if (par[i] !== ' ') {
-    div.innerHTML += `<span>${par[i]}<span/>`
-  } else {
-    div.innerHTML += `<span style='margin-right: 20px;'><span/>`
-  }
-}
 
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element) => {
